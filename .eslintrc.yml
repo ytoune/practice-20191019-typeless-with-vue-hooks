@@ -1,0 +1,25 @@
+parser: vue-eslint-parser
+parserOptions:
+  parser: '@typescript-eslint/parser'
+  tsconfigRootDir: ./
+  sourceType: module
+  extraFileExtensions:
+    - .vue
+env:
+  es6: true
+  node: true
+extends:
+  - plugin:prettier/recommended
+  - plugin:vue/base
+plugins:
+  - prettier
+  - vue
+  - '@typescript-eslint'
+rules:
+  prettier/prettier: [error, {
+    "singleQuote": true,
+    "useTabs": true,
+    "semi": false,
+    "trailingComma": all,
+  }]
+  vue/html-self-closing: off

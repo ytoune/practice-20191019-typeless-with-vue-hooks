@@ -1,0 +1,49 @@
+{
+  "name": "practice-20191019-typeless-with-vue-hooks",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "ytoune"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html --port 1234",
+    "prebuild": "ts-node scripts/prebuild.ts",
+    "build": "parcel build src/index.html -d dist --public-url /practice-20191019-typeless-with-vue-hooks/",
+    "release": "npm run prebuild && npm run build && ts-node scripts/release.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/fs-extra": "8.0.1",
+    "@types/gh-pages": "2.0.1",
+    "@types/node": "12.11.1",
+    "@typescript-eslint/eslint-plugin": "2.4.0",
+    "@typescript-eslint/parser": "2.4.0",
+    "@vue/component-compiler-utils": "3.0.0",
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "eslint": "6.5.1",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-vue": "5.2.3",
+    "fs-extra": "8.1.0",
+    "gh-pages": "2.1.1",
+    "parcel": "1.12.4",
+    "prettier": "prettier/prettier#a8a3a91155f9629e1c0978f9530967e3edf93da3",
+    "rxjs": "6.5.3",
+    "ts-node": "8.4.1",
+    "typeless": "1.2.2",
+    "typescript": "3.7.0-dev.20191018",
+    "vue": "2.6.10",
+    "vue-context-api": "1.0.1",
+    "vue-hooks": "0.3.2",
+    "vue-hot-reload-api": "2.3.4",
+    "vue-property-decorator": "8.3.0",
+    "vue-template-compiler": "2.6.10"
+  },
+  "alias": {
+    "react": "./src/react/core.ts",
+    "react-dom": "./src/react/dom.ts"
+  }
+}
