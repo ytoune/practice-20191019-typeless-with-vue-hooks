@@ -8,7 +8,6 @@ import { TypelessContext, defaultRegistry } from 'typeless'
 const main = () => {
 	const el = document.querySelector('main')
 	if (!el) return
-	// TypelessContext['#context'].value = { registry: defaultRegistry }
 	const value = { registry: defaultRegistry }
 	new Vue({
 		el,
