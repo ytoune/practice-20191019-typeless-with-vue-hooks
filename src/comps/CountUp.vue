@@ -11,7 +11,6 @@ import { useActions } from 'typeless'
 import { useModule, CounterActions, getCounterState } from '~/store'
 
 @Component({
-	//@ts-ignore
 	hooks() {
 		useModule()
 		const acts = useActions(CounterActions)
